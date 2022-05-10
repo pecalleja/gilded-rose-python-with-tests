@@ -38,4 +38,4 @@ However, **do not alter the Item class or Items property** as those belong to th
 
 ## Final Notes
 
-Just for clarification: an item can never have its Quality increase above 50.
+Just for clarification: an item can never have its `quality` increase above 50.

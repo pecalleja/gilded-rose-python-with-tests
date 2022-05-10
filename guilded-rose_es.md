@@ -21,7 +21,7 @@ Bastante simple, ¿no? Bueno, ahora es donde se pone interesante:
 * La `quality` de un artículo nunca es negativa
 * El "Queso Brie envejecido" (`Aged brie`) incrementa su `quality` a medida que se pone viejo
 * La `quality` de un artículo nunca es mayor a `50`
-* El artículo `Sulfuras`, siendo un artículo legendario, no modifica su `sell_in` ni se degrada en `quality` que siempre es 80
+* El artículo `Sulfuras`, siendo un artículo legendario, no degrada en `quality` que siempre es 80
 * Una "Entrada al Backstage", como el queso brie, incrementa su `quality` a medida que la `sell_in` se aproxima
   - si faltan 10 días o menos para el concierto, la `quality` se incrementa en `2` unidades
   - si faltan 5 días o menos, la `quality` se incrementa en `3` unidades
