@@ -13,7 +13,14 @@ Clone the repo and cd to the project directory.
 ## Running the tests
 
 ```bash
-python -m unittest gilded_rose_test.py
+python test_gilded_rose.py
 ```
 
-The final test, which relates to a new feature, is skipped.  Remove the `@skip` annotation in `gilded_rose_test.py` to enable it.
+### With coverage
+
+```shell
+coverage run -m unittest test_gilded_rose.py 
+coverage report -m 
+```
+
+The final test, which relates to a new feature, is skipped.  Remove the `@unittest.skip` annotation in `test_gilded_rose.py` to enable it.
