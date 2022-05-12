@@ -1,12 +1,11 @@
 from item import Item
 from gilded_rose import GildedRose
-
-from unittest import TestCase, skip
+import unittest
 
 gilded_rose = GildedRose()
 
 
-class GildedRoseTest(TestCase):
+class TestGildedRose(unittest.TestCase):
 
     def setUp(self):
         self.items = []
@@ -105,7 +104,7 @@ class GildedRoseTest(TestCase):
         self.assertEqual(item.quality, expected['quality'])
         self.assertEqual(item.sell_in, expected['sell_in'])
 
-    @skip
+    @unittest.skip
     def test_conjured_items_decrease_in_quality_twice_as_fast(self):
         self.items.append(Item("Conjured Mana Cake", 3, 6))
         gilded_rose.update_quality(self.items)
@@ -113,3 +112,7 @@ class GildedRoseTest(TestCase):
         item = self.items[0]
         self.assertEqual(item.quality, expected['quality'])
         self.assertEqual(item.sell_in, expected['sell_in'])
+
+
+if __name__ == '__main__':
+    unittest.main()
